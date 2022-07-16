@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SearchInput } from "../molecules/SearchInput";
 import { UserCard } from "../organisms/User/UserCard";
 
-const users = [...Array(10).key()].map((val) => {
+const users = [...Array(10).keys()].map((val) => {
   return {
     id: val,
     name: `adachi${val}`,
