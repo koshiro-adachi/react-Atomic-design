@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {SearchInput} from '../molecules/SearchInput';
-import {UserCard} from '../organisms/User/UserCard';
+import { SearchInput } from "../molecules/SearchInput";
+import { UserCard } from "../organisms/User/UserCard";
 
-const users =[Array(10)key()].map(((val)=>{
-  return{
+const users = [...Array(10).key()].map((val) => {
+  return {
     id: val,
     name: `adachi${val}`,
     image: "https://source.unsplash.com/NE0XGVKTmcA",
@@ -13,17 +13,15 @@ const users =[Array(10)key()].map(((val)=>{
       name: "test-company"
     },
     website: "https://google.com"
-    }
-  }))
- 
- 
+  };
+});
 
 export const Users = () => {
   return (
     <SContainer>
       <h2>User一覧</h2>
       <SearchInput />
-      {users.map(((user)=>
+      {users.map((user) => (
         <UserCard key={user.id} user={user} />
       ))}
     </SContainer>
