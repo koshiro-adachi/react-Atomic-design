@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const SearchInput = () => {
   return (
     <SContainer>
-      <Input placeholder="検索条件を入力" />
+      <Input placeholder="検索条件を入力" maxLength="10" />
       <SButtonWrapper>
         <PrimaryButton children={"検索"} />
       </SButtonWrapper>

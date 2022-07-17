@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Input = (props) => {
-  const { placeholder = "" } = props;
+  const { placeholder = "", maxLength } = props;
   return (
     <>
-      <SInput type="text" placeholder={placeholder} />
+      <SInput type="text" placeholder={placeholder} maxLength={maxLength} />
     </>
   );
 };
